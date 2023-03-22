@@ -1,0 +1,17 @@
+@use "../utils/colors.scss";
+
+.appartment {
+    background: colors.$color-cards;
+    border-radius: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex: 1;
+    border-radius: 1rem;
+    flex-basis: 25%; 
+
+    .appartment__sub {
+        color: white;
+        padding-top: 10rem;
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,30 @@
+@use "../utils/colors.scss";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    color: colors.$color-primary;
+    font-weight: 500;
+    
+
+    .navbar__logo {
+        margin-top: 2rem;
+    }
+
+    .navbar__links {
+        display: flex;
+        gap: 5rem;
+        margin-top: 2.5rem ;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar__links {
+            gap: 1rem;
+        }
+        .navbar__logo img {
+            width: 150px;
+        }
+        
+    }
+}
