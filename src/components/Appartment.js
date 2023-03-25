@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/layout/Appartment.scss"
+
 const Appartment = () => {
     return (
         <div className='appartment'>

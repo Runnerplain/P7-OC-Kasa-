@@ -1,7 +1,12 @@
+@use '../utils/variables.scss';
+
 .main {
     margin: 0 5rem;
     
     @media (max-width: 768px) {
         margin: 0 1rem;
+    }
+    @media (min-width: variables.$breakpoint) {
+        margin: 0 15rem;
     }
 }
