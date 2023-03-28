@@ -3,6 +3,7 @@ import Navbar from '../Navbar';
 import "../../styles/pages/About.scss";
 import Main from '../Main';
 import BannerAbout from '../BannerAbout';
+import Footer from '../Footer';
 
 const About = () => {
     return (
@@ -10,7 +11,8 @@ const About = () => {
             <Main>
             <Navbar />
             <BannerAbout />
-            </Main>       
+            </Main>
+            <Footer />    
         </div>
     );
 };
