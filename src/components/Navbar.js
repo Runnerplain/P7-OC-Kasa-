@@ -11,7 +11,7 @@ function Navbar() {
             <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
             <li className='navbar__links__sub'>Accueil</li>
             </NavLink>
-            <NavLink to="/apropos" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+            <NavLink to="/About" className={(nav) => (nav.isActive ? "nav-active" : "")}>
             <li className='navbar__links__sub'>A propos</li>
             </NavLink>
         </ul>

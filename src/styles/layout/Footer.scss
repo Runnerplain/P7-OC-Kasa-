@@ -1,0 +1,27 @@
+.footer {
+    background-color: black;
+    height: 100px;
+    position: relative;
+
+    .footer__txt {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 30px;
+        font-weight: 700;
+        
+        @media screen and (max-width: 768px) {
+            font-weight: 500;
+            font-size:small;
+        }
+    }
+
+    .footer__logo {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

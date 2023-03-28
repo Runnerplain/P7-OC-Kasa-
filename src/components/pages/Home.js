@@ -4,6 +4,7 @@ import Navbar from '../Navbar';
 import Banner from '../Banner'
 import AppartmentCards from '../AppartmentCards';
 import Main from "../Main";
+import Footer from "../Footer.js"
 import "../../styles/pages/Home.scss";
 
 
@@ -15,6 +16,8 @@ const Home = () => {
         <Banner />
         <AppartmentCards />
       </Main>
+        <Footer />
+      
     </div>
   );
 };

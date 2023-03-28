@@ -7,6 +7,20 @@
     align-items: center;
     color: colors.$color-primary;
     font-weight: 500;
+    .nav-active {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 50px;
+            width: 0;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%);
+            background: red;
+        }
+    }
 
 
     .navbar__logo {
@@ -18,7 +32,6 @@
         gap: 5rem;
         margin-top: 2.5rem;
         cursor: pointer;
-        position: relative;
         list-style-type: none;
 
         a {
@@ -36,6 +49,7 @@
             width: 150px;
         }
     }
-
-
+    
+    
 }
+

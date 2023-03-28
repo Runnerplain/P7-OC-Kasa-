@@ -1,0 +1,11 @@
+.bannerAbout img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../public/AboutBanner.webp");
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
