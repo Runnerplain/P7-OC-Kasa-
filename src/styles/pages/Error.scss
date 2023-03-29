@@ -1,0 +1,45 @@
+@use "../utils/colors.scss";
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: colors.$color-primary;
+    width:60%;
+
+    .container__sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    h1 {
+        
+        font-size:17rem;
+        margin: auto;    
+        }
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;        
+    }
+
+        .linkHome a {    
+            text-decoration-color: colors.$color-primary;
+
+            p {
+                margin-top: 150px;
+                color: colors.$color-primary;                         
+            }
+    }
+    @media screen and (max-width: 768px) {
+        .container__sub h1 {
+            font-size: 8rem;
+            margin: 0 2rem;            
+        }
+        .container__sub h2 {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+   
+}   

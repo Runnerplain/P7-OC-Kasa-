@@ -9,10 +9,10 @@ function Navbar() {
         </div>
         <ul className="navbar__links">
             <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-            <li className='navbar__links__sub'>Accueil</li>
+                <li className='navbar__links__sub'>Accueil</li>
             </NavLink>
             <NavLink to="/About" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-            <li className='navbar__links__sub'>A propos</li>
+                <li className='navbar__links__sub'>A propos</li>
             </NavLink>
         </ul>
     </nav>
