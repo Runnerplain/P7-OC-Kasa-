@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import Main from '../Main';
-import Error from '../Error';
+import Navbar from '../components/Navbar';
+import Main from '../components/Main';
+import Error from '../components/Error';
 
 const ErrorPage = () => {
     return (

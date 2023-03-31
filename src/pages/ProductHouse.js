@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import Main from '../Main';
+import Navbar from '../components/Navbar';
+import Main from '../components/Main';
 
 const ProductHouse = () => {
     return (
         <div>
-              <Main>
-            <Navbar />
+            <Main>
+                <Navbar />
             </Main>
         </div>
     );

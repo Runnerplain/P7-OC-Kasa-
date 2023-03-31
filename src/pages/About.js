@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import "../../styles/pages/About.scss";
-import Main from '../Main';
-import BannerAbout from '../BannerAbout';
-import Footer from '../Footer';
+import Navbar from '../components/Navbar';
+import "../styles/pages/About.scss"
+import Main from '../components/Main';
+import BannerAbout from '../components/BannerAbout';
+import Footer from '../components/Footer';
 
 const About = () => {
     return (
