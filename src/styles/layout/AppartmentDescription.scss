@@ -1,0 +1,40 @@
+@use "../utils/colors.scss";
+
+
+
+.appartment__carousel__description {
+    p {
+        margin-block: 0;
+    }
+
+    .title {
+        color: white;
+        background-color: colors.$color-primary;
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+        padding-left: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            color: white;
+        }
+
+        i {
+            margin-right: 10px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+    }
+
+    .description {
+        position: relative;
+        top: -5px;
+        z-index: -1;
+        background-color: colors.$color-secondary;
+        padding: 2rem 1.5rem;
+        border-radius: 0.7rem;
+    }
+}
+

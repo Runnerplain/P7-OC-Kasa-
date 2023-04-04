@@ -1,0 +1,12 @@
+@use "../../styles/utils/colors.scss";
+
+.bannerAppartment {
+    width: 100%;
+    height: 30rem;
+    background-image: url(https://picsum.photos/1400/);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-position: center;
+}

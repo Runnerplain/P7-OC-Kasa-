@@ -26,13 +26,16 @@
             
         }
         @media (max-width: 768px) {
+            
             .navbar__links {
                 gap: 0.5rem;
+                text-transform: uppercase;
+                font-size: 95%;
             }
         
-            .navbar__logo {
-              width: 215px;
-              height: 70px;
+            .navbar__logo svg {
+              width: 195px;
+              height: 60px;
             }
         }
     }
