@@ -1,0 +1,135 @@
+@use "../../styles/utils/colors.scss";
+
+.bannerAppartment {
+    width: 100%;
+    height: 30rem;
+    background-image: url(https://picsum.photos/1400/);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.appartmentHeader {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appartment__title {
+    flex-grow: 1;
+
+    h1 {
+        margin-top: 0;
+        font-weight: 400;
+        margin-bottom: -5px;
+    }
+
+    h2 {
+        font-weight: 100;
+        font-size: small;
+        margin-bottom: 5px;
+    }
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    color: colors.$color-primary;
+}
+
+.appartment__aside {
+    
+    .appartment__aside__owner {
+        display: flex;
+
+        h3 {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding-right: 10px;
+            font-weight: 100;
+        }
+
+        .appartment__aside__owner__portrait {
+            height: 64px;
+            width: 64px;
+            border-radius: 50px;
+            background-color: colors.$color-owner;
+        }
+    }
+
+    .appartment__aside__stars {
+        display: flex;
+        gap: 0.2rem;
+
+        * {
+            font-size: 2rem;
+        }
+
+        .on {
+            color: colors.$color-primary;
+        }
+
+        .off {
+            color: colors.$color-owner;
+        }
+    }
+
+}
+
+.appartment__title__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+
+
+    span {
+        background-color: colors.$color-primary;
+        color: colors.$color-secondary;
+        padding: 0.3rem 2.5rem;
+        border-radius: 15px;
+    }
+}
+
+.appartment__carousel {
+    margin-top: 1rem;
+
+    .appartment__carousel__description {
+        p {
+            margin-block: 0;
+        }
+        .title {
+            color: white;
+            background-color: colors.$color-primary;
+            padding: 0.7rem;
+            border-radius: 0.7rem;
+            padding-left: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                color: white;
+            }
+
+            i {
+                margin-right: 10px;
+                font-size: 32px;
+                cursor: pointer;
+            }
+        }
+        .description {
+            position: relative;
+            top: -5px;
+            z-index: -1;
+            background-color: colors.$color-secondary;
+            padding: 1rem 0.5rem;
+            border-radius: 0.7rem;
+        }
+    }
+}

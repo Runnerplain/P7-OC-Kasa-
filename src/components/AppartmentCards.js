@@ -1,16 +1,16 @@
 import React from 'react';
 import "../styles/layout/AppartmentCards.scss"
-import Appartment from "../components/Appartment.js"
+import AppartmentThumbnail from "../components/AppartmentThumbnail"
 
 const AppartmentCards = () => {
     return (
         <div className='appartmentCards'>
-            <Appartment />
-            <Appartment />
-            <Appartment />
-            <Appartment />
-            <Appartment />
-            <Appartment />
+            <AppartmentThumbnail />
+            <AppartmentThumbnail />
+            <AppartmentThumbnail />
+            <AppartmentThumbnail />
+            <AppartmentThumbnail />
+            <AppartmentThumbnail />
         </div>
     );
 };

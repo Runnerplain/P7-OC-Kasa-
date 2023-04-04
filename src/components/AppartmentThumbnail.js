@@ -1,15 +1,15 @@
 import React from 'react';
-import "../styles/layout/Appartment.scss"
+import "../styles/layout/AppartmentThumbnail.scss";
 import { NavLink } from 'react-router-dom';
 
-const Appartment = () => {
+const AppartmentThumbnail = () => {
     return (
         <div className='appartment'>
-            <NavLink to='/productHouse'>
+            <NavLink to='/AppartmentPage'>
                 <div className="appartment__sub">Titre de la location</div>
             </NavLink>
         </div>
     );
 };
 
-export default Appartment;
+export default AppartmentThumbnail;
