@@ -34,7 +34,7 @@ const ModelAppartment = () => {
             </div>
             <div className="appartment__pan">
                 <DescriptionPan title="Description" content={flat.description}/>
-                <DescriptionPan title="Equipements" content={flat.equipments.map(eq => <li>{eq}</li>)}/>
+                <DescriptionPan title="Equipements" content={flat.equipments.map((eq, index) => <li key={index}>{eq}</li>)}/>
             </div>
         </section>
     );
