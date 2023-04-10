@@ -2,9 +2,14 @@ import React from 'react';
 import "../../styles/layout/AppartmentBanner.scss";
 
 
-const AppartmentBanner = () => {
+const AppartmentBanner = (props) => {   
+    const flatPictures = props.pictures;
     return (
-        <div className="bannerAppartment"></div>
+        <div className="bannerAppartment">
+            
+            { flatPictures.map((pic) => <img key={pic} src={pic} alt="">
+            </img>)}
+        </div>
     );
 };
 

@@ -2,17 +2,15 @@ import React from 'react';
 import "../../styles/layout/AppartmentTitle.scss";
 
 
-const AppartmentTitle = () => {
+const AppartmentTitle = (props) => {
     return (
         <div className='appartment__title'>
-                    <h1>Cozy loft on the Canal Saint-Martin</h1>
-                    <h2>Paris, Île-de-France</h2>
-                    <div className="appartment__title__tags">
-                        <span>Cozy</span>
-                        <span>Canal</span>
-                        <span>Paris 10</span>
-                    </div>
-                </div>
+            <h1>{props.flat.title}</h1>
+            <h2>{props.flat.location}</h2>
+            <div className="appartment__title__tags">
+                {props.flat.tags.map((tag) => (<span key={tag}>{tag}</span>))}
+            </div>
+        </div>
     );
 };
 

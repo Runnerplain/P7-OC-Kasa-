@@ -2,13 +2,18 @@ import React from 'react';
 import "../styles/layout/AppartmentThumbnail.scss";
 import { NavLink } from 'react-router-dom';
 
-const AppartmentThumbnail = () => {
+const AppartmentThumbnail = (props) => {
+
+
     return (
+            <NavLink className="LinkToAppartmentPage" to="./AppartmentPage" state={ {
+                AppartmentId: props.id
+            }}>
         <div className='appartment'>
-            <NavLink to='/AppartmentPage'>
-                <div className="appartment__sub">Titre de la location</div>
-            </NavLink>
+            <img src={props.imageUrl} alt="" />
+            <div className="appartment__sub">{props.title}</div>
         </div>
+            </NavLink>
     );
 };
 

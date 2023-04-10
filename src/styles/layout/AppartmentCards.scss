@@ -2,13 +2,18 @@
 
 .appartmentCards {
     background: colors.$color-secondary;
+    padding: 60px 60px;
+    min-width: 35vh;
     min-height: 50vh;
-    width: clamp(50%, 100%, 100%);
-    border-radius: 2rem;
+    border-radius: 25px;
     display: flex;
-    flex-flow: row wrap;
-    gap: 1rem;
-    @media (max-width: 768px) {
-        flex-direction: column;
+    flex-flow: wrap;
+    gap: 60px;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+
+    @media (max-width: 500px) {
+        justify-content: center;
+        padding: 40px 10px;
     }
 }

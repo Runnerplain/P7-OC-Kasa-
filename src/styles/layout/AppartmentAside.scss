@@ -1,7 +1,7 @@
 @use "../../styles/utils/colors.scss";
 
 .appartment__aside {
-
+    padding-top: 1rem;
     .appartment__aside__owner {
         display: flex;
 
@@ -12,9 +12,9 @@
             font-weight: 100;
         }
 
-        .appartment__aside__owner__portrait {
-            height: 64px;
-            width: 64px;
+        .appartment__aside__owner__portrait img {
+            height: 100px;
+            width: 100px;
             border-radius: 50px;
             background-color: colors.$color-owner;
         }
@@ -23,17 +23,15 @@
     .appartment__aside__stars {
         display: flex;
         gap: 0.2rem;
-
+        color: colors.$color-owner;
+        
+        
         * {
             font-size: 2rem;
         }
-
+        
         .on {
             color: colors.$color-primary;
-        }
-
-        .off {
-            color: colors.$color-owner;
         }
     }
 

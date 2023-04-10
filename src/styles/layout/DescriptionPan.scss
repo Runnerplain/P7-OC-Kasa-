@@ -2,7 +2,11 @@
 
 
 
-.appartment__carousel__description {
+.appartment__description {
+    margin-bottom: 1rem;
+    flex-basis: 50%;
+    overflow: hidden;
+
     p {
         margin-block: 0;
     }
@@ -11,7 +15,7 @@
         color: white;
         background-color: colors.$color-primary;
         padding: 0.7rem;
-        border-radius: 0.7rem;
+        border-radius: 5px;
         padding-left: 1rem;
         display: flex;
         justify-content: space-between;
@@ -34,7 +38,18 @@
         z-index: -1;
         background-color: colors.$color-secondary;
         padding: 2rem 1.5rem;
-        border-radius: 0.7rem;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+        &.hidden {
+            transform: translateY(-100%);           
+        }
+        &.visible {
+            transform: translateY(0);
+        }
+    }
+
+    li {
+        list-style: none;
     }
 }
 

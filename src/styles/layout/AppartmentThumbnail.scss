@@ -1,21 +1,35 @@
 @use "../utils/colors.scss";
 
-.appartment {
-    background: colors.$color-cards;
-    border-radius: 2rem;
-    margin: 1rem;
-    display: flex;
-    flex: 1;
-    border-radius: 1rem;
-    flex-basis: 25%; 
-
-    a {
-        text-decoration: none;
+.LinkToAppartmentPage {
+    text-decoration: none;
+    
+    
+    .appartment {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-
-    .appartment__sub {
-        color: white;
-        padding-top: 10rem;
-        padding-left: 1rem;
+    img {
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 1rem;
+        filter: brightness(80%);
+        transform: scale(1);
+        &:hover {
+            box-shadow: 0px 2px 8px 3px rgba(115,115,115,0.38);
+            filter: brightness(100%);
+            transform: scale(1.01);
     }
-}
+    
+        }
+        
+        .appartment__sub {
+            color: rgb(255, 255, 255);
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 180px;
+            padding-left: 10px;
+            
+        }
+    }
