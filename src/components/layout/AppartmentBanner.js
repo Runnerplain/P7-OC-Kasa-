@@ -31,6 +31,7 @@ const AppartmentBanner = (props) => {
             <button className='btnPrevious' onClick={PreviousPic}>
             <i className='fas fa-chevron-left'></i>
             </button>
+            <span className='countCarousel'>{currentPicture + 1} / {flatPictures.length}</span>
             <button className='btnNext' onClick={NextPic}>
             <i className='fas fa-chevron-right'></i>
             </button>
