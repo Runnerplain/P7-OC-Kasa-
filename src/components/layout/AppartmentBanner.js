@@ -28,8 +28,12 @@ const AppartmentBanner = (props) => {
 
     return (
         <div className="bannerAppartment">
-            <button onClick={PreviousPic}>Previous</button>
-            <button onClick={NextPic}>Next</button>
+            <button className='btnPrevious' onClick={PreviousPic}>
+            <i className='fas fa-chevron-left'></i>
+            </button>
+            <button className='btnNext' onClick={NextPic}>
+            <i className='fas fa-chevron-right'></i>
+            </button>
             { flatPictures.map((pic, index) => 
             (<img key={pic} src={pic} alt="" className={ getClassName(index)}>
             </img>))}

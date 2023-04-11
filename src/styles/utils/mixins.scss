@@ -1,0 +1,27 @@
+@mixin btnChevronModel {
+    position: absolute;
+    width: 5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    i {
+        color: white;
+        font-size: 70px;
+    }
+}
+
+@mixin btnChevronModel__right {
+    @include btnChevronModel; 
+        top: 0;
+        bottom: 0;
+        right: 0;
+    
+}
+
+@mixin btnChevronModel__left {
+    @include btnChevronModel; 
+        top: 0;
+        bottom: 0;
+    
+}

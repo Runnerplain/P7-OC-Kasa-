@@ -1,9 +1,19 @@
-@use "../../styles/utils/colors.scss";
+@use "../utils/colors.scss";
+@use "../utils/mixins.scss";
 
 .bannerAppartment {
     position: relative;
     height: 30rem;
     width: 100%;
+
+
+    .btnPrevious {
+        @include mixins.btnChevronModel__left;
+    }
+    
+    .btnNext {
+        @include mixins.btnChevronModel__right;
+    }
     
     img {
     position: absolute;
@@ -13,10 +23,10 @@
     object-fit: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
-    margin-top: 1.5rem;
     opacity: 0;
     transition: 0.5s ease;
     &.show {
         opacity: 1;
     }
 }}
+
