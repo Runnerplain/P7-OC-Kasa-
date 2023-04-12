@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import "../../styles/layout/DescriptionPan.scss";
+import "../../../styles/layout/DescriptionPan.scss";
 
 const DescriptionPan = (props) => {
 
     // Function & variable for hidden or show panel
-    const [isContentVisible, setIsContentVisible] =useState(false);
+    const [isContentVisible, setIsContentVisible] =useState(true);
     const enableContent = () => {
         setIsContentVisible(!isContentVisible)
     }

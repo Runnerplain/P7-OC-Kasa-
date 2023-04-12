@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/layout/MainElements/Navbar';
 import "../styles/pages/About.scss"
 import Main from '../components/Main';
-import BannerAbout from '../components/BannerAbout';
-import DescriptionPan from '../components/layout/DescriptionPan';
-import Footer from '../components/Footer';
+import BannerAbout from '../components/layout/MainElements/BannerAbout';
+import DescriptionPan from '../components/layout/MainElements/DescriptionPan';
+import Footer from '../components/layout/MainElements/Footer';
 
 const About = (props) => {
     return (

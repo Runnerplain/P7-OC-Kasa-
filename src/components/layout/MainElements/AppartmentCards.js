@@ -1,6 +1,6 @@
-import "../styles/layout/AppartmentCards.scss"
-import AppartmentThumbnail from "../components/AppartmentThumbnail"
-import { useAppartments } from '../hooks/useAppartments';
+import "../../../styles/layout/AppartmentCards.scss";
+import AppartmentThumbnail from "./AppartmentThumbnail";
+import { useAppartments } from '../../../hooks/useAppartments';
 
 
 

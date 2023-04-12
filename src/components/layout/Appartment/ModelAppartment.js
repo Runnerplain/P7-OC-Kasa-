@@ -1,9 +1,9 @@
-import "../../styles/layout/ModelAppartment.scss";
-import DescriptionPan from './DescriptionPan';
+import "../../../styles/layout/ModelAppartment.scss";
+import DescriptionPan from '../MainElements/DescriptionPan';
 import AppartmentBanner from './AppartmentBanner';
-import AppartmentTitle from './AppartmentTitle';
+import AppartmentTitle from '../Appartment/AppartmentTitle';
 import AppartmentAside from './AppartmentAside';
-import { useAppartment } from '../../hooks/useAppartment';
+import { useAppartment } from '../../../hooks/useAppartment';
 
 
 const ModelAppartment = () => {

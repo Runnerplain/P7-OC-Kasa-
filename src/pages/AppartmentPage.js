@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/layout/MainElements/Navbar';
 import Main from '../components/Main';
-import Footer from '../components/Footer';
-import ModelAppartment from '../components/layout/ModelAppartment';
+import Footer from '../components/layout/MainElements/Footer';
+import ModelAppartment from '../components/layout/Appartment/ModelAppartment';
 
 const AppartmentPage = () => {
     return (

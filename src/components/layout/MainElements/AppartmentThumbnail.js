@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/layout/AppartmentThumbnail.scss";
+import "../../../styles/layout/AppartmentThumbnail.scss";
 import { NavLink } from 'react-router-dom';
 
 const AppartmentThumbnail = (props) => {

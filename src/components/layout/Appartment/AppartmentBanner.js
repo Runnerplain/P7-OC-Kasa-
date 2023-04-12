@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../../styles/layout/AppartmentBanner.scss";
+import "../../../styles/layout/AppartmentBanner.scss";
 
 
 const AppartmentBanner = (props) => {   

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/layout/AppartmentTitle.scss";
+import "../../../styles/layout/AppartmentTitle.scss";
 
 
 const AppartmentTitle = (props) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/layout/AppartmentAside.scss";
+import "../../../styles/layout/AppartmentAside.scss";
 
 const AppartmentAside = (props) => {
 

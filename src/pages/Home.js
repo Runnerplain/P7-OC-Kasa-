@@ -1,10 +1,10 @@
 
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Banner from '../components/Banner'
-import AppartmentCards from '../components/AppartmentCards';
+import Navbar from '../components/layout/MainElements/Navbar';
+import Banner from '../components/layout/MainElements/Banner'
+import AppartmentCards from '../components/layout/MainElements/AppartmentCards';
 import Main from "../components/Main";
-import Footer from "../components/Footer.js"
+import Footer from "../components/layout/MainElements/Footer"
 import "../styles/pages/Home.scss";
 
 
