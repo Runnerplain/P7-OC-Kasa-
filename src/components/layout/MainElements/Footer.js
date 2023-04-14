@@ -1,6 +1,15 @@
 import React from 'react';
 import "../../../styles/layout/Footer.scss";
 
+
+
+
+/**
+ * 
+ * @returns footer structure 
+ * @description We have SVG for better resolution
+ */
+
 const Footer = () => {
     return (
         <div className='footer'>

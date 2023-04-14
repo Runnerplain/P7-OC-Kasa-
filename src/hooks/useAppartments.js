@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react'
 
 
- export const useAppartments = () => {
+/**
+ * @function 
+ * @returns {Array} function with Fetch method to db.json & method to abort (clean) the DOM when is active
+ */
+export const useAppartments = () => {
     const [appartments, setAppartments] = useState([])
-    
-    
+
+    /*This useEffect with AbortController allow the DOM to 
+    clean all fetch demand when changing*/
+
     useEffect(() => {
         const abortController = new AbortController();
         fetch('./db.json', { signal: abortController.signal })

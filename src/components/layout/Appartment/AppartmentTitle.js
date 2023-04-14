@@ -2,6 +2,12 @@ import React from 'react';
 import "../../../styles/layout/AppartmentTitle.scss";
 
 
+/**
+ * 
+ * @param {*} props 
+ * @returns All the section of title & location + tags 
+ */
+
 const AppartmentTitle = (props) => {
     return (
         <div className='appartment__title'>

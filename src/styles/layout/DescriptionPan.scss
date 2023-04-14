@@ -40,11 +40,15 @@
         padding: 2rem 1.5rem;
         border-radius: 10px;
         transition: transform 0.3s ease-in-out;
+
         &.hidden {
-            transform: translateY(-100%);           
+            transform: translateY(-100%);
+            display: none;
         }
+
         &.visible {
             transform: translateY(0);
+            display: block;
         }
     }
 
@@ -52,4 +56,3 @@
         list-style: none;
     }
 }
-

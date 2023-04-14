@@ -1,6 +1,13 @@
 import React from 'react';
 import "../../../styles/layout/HomeBanner.scss"
 
+
+
+/**
+ * 
+ * @returns banner for homepage
+ * @description Implemented with background-image in css in webp format
+ */
 function Banner() {
     return (
         <div className='banner'>

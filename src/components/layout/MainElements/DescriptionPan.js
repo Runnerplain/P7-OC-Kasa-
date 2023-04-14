@@ -1,14 +1,33 @@
 import React, { useState } from 'react';
 import "../../../styles/layout/DescriptionPan.scss";
 
+
+
+/**
+ * 
+ * @param {*} props 
+ * @returns this is a model for pannel description, using in appartment page & about page
+ */
+
 const DescriptionPan = (props) => {
 
-    // Function & variable for hidden or show panel
-    const [isContentVisible, setIsContentVisible] =useState(true);
+    const [isContentVisible, setIsContentVisible] =useState(false);
+
+    /**
+     * @function enableContent result of condition if isContentVisible is not display
+     * @return void
+     */
     const enableContent = () => {
         setIsContentVisible(!isContentVisible)
     }
+
+    /**
+     * @returns ternary operator to put additional class to "description" class if "isContentVisible" is "on" or "off"
+     */
     const contentClass = (isContentVisible ? 'visible' : "hidden") + " description";
+    /**
+     * @returns ternary operator to change icon orientation up or down if "isContentVisible" is "on" or "off"
+     */
     const chevronClass = (isContentVisible ? 'fa-chevron-down' : 'fa-chevron-up') + " fas"
 
     return (        

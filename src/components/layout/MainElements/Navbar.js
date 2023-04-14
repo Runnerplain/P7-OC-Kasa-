@@ -2,6 +2,13 @@ import React from 'react';
 import "../../../styles/layout/Navbar.scss";
 import { NavLink } from 'react-router-dom';
 
+
+
+/**
+ * 
+ * @returns Navigation menu with logo
+ * @description We have SVG for better resolution and we have the property "isActive" in Navlink to know where are we. 
+ */
 function Navbar() {
     return <nav className='navbar'>
         <NavLink to='/'>
@@ -14,7 +21,7 @@ function Navbar() {
             <path d="M106.266 34.4632L84.3497 21.6785L72.1945 14.6376L60.2234 35.5749L60.4076 55.2153L82.1396 68L84.3497 66.703V48.1744L94.1106 30.9428L104.056 36.6866V55.2153L106.266 53.9183V34.4632Z" fill="#FF6060"/>
             </svg>
             </div>
-        </NavLink>
+        </NavLink>       
         <ul className="navbar__links">
             <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                 <li className='navbar__links__sub'>Accueil</li>
