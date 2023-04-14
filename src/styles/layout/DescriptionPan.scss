@@ -39,16 +39,16 @@
         background-color: colors.$color-secondary;
         padding: 2rem 1.5rem;
         border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
 
         &.hidden {
-            transform: translateY(-100%);
             display: none;
+            
         }
 
         &.visible {
-            transform: translateY(0);
+            animation: collapseAnimationDown 0.3s ease ;
             display: block;
+            
         }
     }
 
@@ -56,3 +56,13 @@
         list-style: none;
     }
 }
+
+@keyframes collapseAnimationDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
