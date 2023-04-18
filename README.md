@@ -1,10 +1,11 @@
 # Kasa Project - P7 - OC
 
-### This is the front-end part of Kasa website, a property rental between users. The website is developed in React on the front-end and with Node.js on the back-end. This is a reboot of an old website that war developed in ASP.NET at the time.
+### This is the front-end part of Kasa website, a property rental between users. The website is developed in React on the front-end and with Node.js on the back-end. This is a reboot of an old website that was developed in ASP.NET at the time.
 
 
-![alt text](https://zupimages.net/viewer.php?id=23/15/gmtt.png)
----
+
+---![Capture d’écran 2023-04-14 151227](https://user-images.githubusercontent.com/118285305/232058402-e66ef845-42ce-46d5-9784-71e74f786a25.png)
+
 
 ### Built With:
 
