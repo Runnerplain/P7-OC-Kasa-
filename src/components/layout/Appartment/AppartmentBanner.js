@@ -23,7 +23,7 @@ const AppartmentBanner = (props) => {
      */
 
     const NextPic = () => {
-        setCurrentPicture((currentPicture + 1) % flatPictures.length); //modulo ? ne pas dépasser l'array
+        setCurrentPicture((currentPicture + 1) % flatPictures.length); // remainder (modulo) system https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
     };
 
     const PreviousPic = () => {
