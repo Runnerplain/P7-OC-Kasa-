@@ -36,6 +36,8 @@ const AppartmentBanner = (props) => {
     }
 
 
+
+    if (flatPictures.length > 1) {
     return (
         <div className="bannerAppartment">
             <button className='btnPrevious' onClick={PreviousPic}>
@@ -50,6 +52,11 @@ const AppartmentBanner = (props) => {
             </img>))}
         </div>
     );
-};
-
+} else {
+    return (
+        <div className="bannerAppartment">
+            <img key={flatPictures[0]} src={flatPictures[0]} alt="" className={getClassName(0)}></img>
+        </div>
+    );
+    }}
 export default AppartmentBanner;
