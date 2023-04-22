@@ -12,12 +12,18 @@ import ErrorPage from '../pages/ErrorPage';
  */
 
 const App = () => {
+
+
+
+ 
+
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/AppartmentPage' element={<AppartmentPage />} />
+        <Route path='/appartmentPage/:flatId' element={<AppartmentPage />} />
         <Route path='*' element={<ErrorPage />} errorElement={<Error />} />
       </Routes>
     </BrowserRouter>

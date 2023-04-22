@@ -7,19 +7,23 @@ import { useAppartment } from '../../../hooks/useAppartment';
 
 
 
+
+
 /**
  * @function
  * @returns {JSX.Element} Jsx Element with a standars model of apartment or a message "...loading" if the page its loading, so we can prevent crash...
  */
-const ModelAppartment = () => {
+const ModelAppartment = (param) => {
 
     /**
      * @constant {function}
      */
-    const flat = useAppartment();
+    const flat = useAppartment(param.flatId);
 
     // Condition to display loading if the page is loading
     if (flat == null) return <div>...Loading</div>;
+
+
 
 
     return (
@@ -36,5 +40,6 @@ const ModelAppartment = () => {
         </section>
     );
 };
+
 
 export default ModelAppartment;
