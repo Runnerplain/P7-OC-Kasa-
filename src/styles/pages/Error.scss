@@ -6,7 +6,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     color: colors.$color-primary;
-    width:60%;
+    width:100%;
 
     .container__sub {
         display: flex;
@@ -43,4 +43,15 @@
         }
     }
    
-}   
+}
+
+
+// Modification post Soutenance
+.containFooter404 {
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    @media screen and (max-width: 768px) {
+        margin-top: 145px;
+    }
+}

@@ -55,7 +55,7 @@ const AppartmentBanner = (props) => {
 } else {
     return (
         <div className="bannerAppartment">
-            <img key={flatPictures[0]} src={flatPictures[0]} alt="" className={getClassName(0)}></img>
+            <img key={flatPictures[0]} src={flatPictures[0]} alt="" className={getClassName(0)}></img>   {/*Changement post soutenance*/}
         </div>
     );
     }}

@@ -4,9 +4,8 @@ import AppartmentBanner from './AppartmentBanner';
 import AppartmentTitle from '../Appartment/AppartmentTitle';
 import AppartmentAside from './AppartmentAside';
 import { useAppartment } from '../../../hooks/useAppartment';
-
-
-
+import ErrorPage from "../../../pages/ErrorPage";
+import Footer from "../MainElements/Footer";
 
 
 /**
@@ -15,17 +14,17 @@ import { useAppartment } from '../../../hooks/useAppartment';
  */
 const ModelAppartment = (param) => {
 
+    
     /**
      * @constant {function}
      */
     const flat = useAppartment(param.flatId);
-
+    
     // Condition to display loading if the page is loading
-    if (flat == null) return <div>...Loading</div>;
-
-
-
-
+   
+    if (!flat) {
+        return <ErrorPage />
+    }
     return (
         <section className='appartmentPage'>
             <AppartmentBanner pictures={flat.pictures} />
@@ -37,9 +36,10 @@ const ModelAppartment = (param) => {
                 <DescriptionPan title="Description" content={flat.description} />
                 <DescriptionPan title="Equipements" content={flat.equipments.map((eq, index) => <li key={index}>{eq}</li>)} />
             </div>
+            <Footer />     
         </section>
-    );
-};
+    )
+}
 
 
 export default ModelAppartment;

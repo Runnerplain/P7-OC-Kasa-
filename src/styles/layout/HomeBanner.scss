@@ -1,32 +1,34 @@
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/banner.webp");
     min-height: 200px;
-    margin: 3rem auto;
+    margin: 3rem 20px;
     margin-bottom: 2rem;
     border-radius: 2rem;
     display: grid;
     place-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
 
     h1 {
         display: flex;
         gap: 5px;
 
-    span {
-        color: white;
-        font-weight: 500;        
-    }}
+        span {
+            color: white;
+            font-weight: 500;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-        
+
     .banner {
-        margin: 2rem auto;
+        margin: 2rem 10px;
     }
-    
+
     h1 {
-        
+
         flex-direction: column;
-}}
+    }
+}

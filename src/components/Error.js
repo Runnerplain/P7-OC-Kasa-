@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import "../styles/pages/Error.scss";
+import Footer from "../components/layout/MainElements/Footer";
 
 
 /**
  * 
  * @returns {JSX.Element} JSX element of errorPage section
  */
-
 const Error = () => {
     return (
         <div className='container'>
@@ -20,6 +20,9 @@ const Error = () => {
                     </NavLink>
                 </div>
             </div>
+            <div className="containFooter404"> {/* Modification post soutenance */}
+                <Footer /> 
+            </div> 
         </div>
     );
 };

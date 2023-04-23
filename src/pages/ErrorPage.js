@@ -1,16 +1,13 @@
 import React from 'react';
-import Navbar from '../components/layout/MainElements/Navbar';
-import Main from '../components/Main';
-import Error from '../components/Error';
+import "../styles/pages/Error.scss";
+import Error from "../components/Error";
 
 const ErrorPage = () => {
     return (
-        <div>
-            <Main>
-            <Navbar />
-            <Error />
-            </Main>
-        </div>
+            <div>
+                <Error />      
+            </div>
+            
     );
 };
 

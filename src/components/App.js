@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "../pages/Home";
 import About from '../pages/About';
 import AppartmentPage from '../pages/AppartmentPage';
-import Error from "./Error";
 import ErrorPage from '../pages/ErrorPage';
+import Navbar from "../components/layout/MainElements/Navbar";
 
 /**
  * 
@@ -14,18 +14,17 @@ import ErrorPage from '../pages/ErrorPage';
 const App = () => {
 
 
-
- 
-
-
+  // Modification post soutenance
   return (
     <BrowserRouter>
+        <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/appartmentPage/:flatId' element={<AppartmentPage />} />
-        <Route path='*' element={<ErrorPage />} errorElement={<Error />} />
+        <Route path='/appartmentPage/:flatId' element={<AppartmentPage />} /> {/* changement post soutenance */}
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
+      
     </BrowserRouter>
   );
 };

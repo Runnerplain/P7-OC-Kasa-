@@ -21,6 +21,11 @@ export function useAppartment(flatId) {
     const abortController = new AbortController();
     
     const flat = flats.find(flat => flat.id === flatId);
+
+    if (!flat) {
+      setFlat(null)           /* Changement post soutenance */
+      return
+    }
     setFlat(flat)
     return () => {
       abortController.abort()
